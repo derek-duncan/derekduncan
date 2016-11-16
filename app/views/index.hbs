@@ -1,5 +1,5 @@
 {{#> layout }}
-  <div class="p3">
+  <div class="p3 js-main-container">
     {{#> pageSection}}
       <h1 class="fs-6 color-primary serif m0 mb1">Derek Duncan</h1>
       <p class="fs-3 color-gry m0">I develop websites. I love the challenge & creativity. Oh! I design sometimes as well.</p>
@@ -7,21 +7,30 @@
 
     {{#> pageSection}}
       {{> subtitle text="News"}}
-      <div class="flex mxn2">
-        <div class="col-3 mx2">
+      <div class="mxn2">
+        {{#*inline "cardWrapper"}}
+          <div class="col col-12 md-col-6 lg-col-3 px2">
+            {{> @partial-block }}
+          </div>
+        {{/inline}}
+
+        {{#>cardWrapper}}
           {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="/" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
-        </div>
-        <div class="col-3 mx2">
+        {{/cardWrapper}}
+        {{#>cardWrapper}}
           {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="/" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
-        </div>
+        {{/cardWrapper}}
       </div>
     {{/pageSection}}
   </div>
 
-  <div class="p3 fixed bottom-0 left-0 col-12 bg-white border-top border-1 border-light-gry">
+  <div class="border-box p3 fixed bottom-0 left-0 col-12 bg-white border-top border-1 border-light-gry js-sticky">
     {{> subtitle text="Messaging"}}
-    <div>
-      <img src="/images/command-icon.svg" />
+    <div class="flex col-12">
+      <img src="/images/command-icon.svg" class="grow-0 shrink-1" />
+      <div class="col-12 pl2">
+        <input class="p1 pt2 col-12 border-0 border-bottom-3 border-dashed outline-none fs-4 sans" placeholder="Type a command...">
+      </div>
     </div>
   </div>
 {{/layout }}
