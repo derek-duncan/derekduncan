@@ -17,7 +17,7 @@ app.use(errorMessage());
 app.use(bodyParser());
 app.use(baseRouter.routes());
 app.use(baseRouter.allowedMethods());
-app.use(serve('./assets'));
+app.use(serve('./public'));
 app.use(compress());
 
 app.listen(3000);

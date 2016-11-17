@@ -1,0 +1,50 @@
+@import 'normalize.css';
+
+:root {
+  --color-dark: #282B2C;
+  --color-primary: #FF3B3B;
+  --color-secondary: #FFFD54;
+
+  --serif: 'Playfair Display', serif;
+  --sans: 'Karla', sans-serif;
+
+  --space-small: 0.8rem;
+  --space-medium: 1.6rem;
+  --space-normal: 2rem;
+  --space-large: 3.2rem;
+  --space-larger: 4.8rem;
+  --space-largest: 60rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: 1.8rem var(--sans);
+  color: var(--color-dark);
+}
+
+.banner {
+  text-align: center;
+  margin: var(--space-normal) auto;
+}
+
+.banner__mark {
+  margin: 0;
+}
+
+.banner__name {
+  margin: var(--space-medium) 0 0;
+  padding: 0;
+  font-family: var(--serif);
+  font: 600 4.6rem var(--serif);
+
+  span { color: var(--color-secondary); }
+}
+
+.banner__text {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}

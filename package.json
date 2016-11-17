@@ -19,18 +19,26 @@
     "koa-views": "^5.0.2",
     "marked": "^0.3.6",
     "normalize.css": "^5.0.0",
-    "postcss-import": "^8.2.0"
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
-    "cssnano": "^3.8.0",
-    "gulp": "^3.9.1",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.0",
     "gulp-postcss": "^6.2.0",
     "postcss-css-variables": "^0.6.0",
     "postcss-custom-media": "^5.0.1",
-    "postcss-import": "^8.2.0",
+    "postcss-loader": "^1.1.1",
     "postcss-nested": "^1.0.0",
-    "postcss-responsify": "^1.0.3"
+    "postcss-responsify": "^1.0.3",
+    "postcss-smart-import": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "webpack": "2.1.0-beta.25",
+    "webpack-dev-server": "2.1.0-beta.10"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
