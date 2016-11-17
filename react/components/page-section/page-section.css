@@ -1,0 +1,29 @@
+@import '../../variables.css';
+
+.page-section {
+  display: flex;
+}
+
+.page-section__info {
+  border-right: 1px solid var(--color-medium-gry);
+  padding: 0 var(--space-large) 0;
+}
+
+.page-section__count {
+  margin: 0;
+  padding: 0;
+  color: var(--color-light-gry);
+  font: 600 4.6rem var(--serif);
+}
+
+.page-section__title {
+  margin: 0;
+  padding: 0;
+  color: var(--color-dark);
+  font: 600 1.6rem var(--sans);
+  text-transform: uppercase;
+}
+
+.page-section__content {
+  padding: 0 var(--space-large);
+}

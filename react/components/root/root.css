@@ -1,20 +1,7 @@
 @import 'normalize.css';
+@import '../../variables.css';
 
-:root {
-  --color-dark: #282B2C;
-  --color-primary: #FF3B3B;
-  --color-secondary: #FFFD54;
-
-  --serif: 'Playfair Display', serif;
-  --sans: 'Karla', sans-serif;
-
-  --space-small: 0.8rem;
-  --space-medium: 1.6rem;
-  --space-normal: 2rem;
-  --space-large: 3.2rem;
-  --space-larger: 4.8rem;
-  --space-largest: 60rem;
-}
+* { box-sizing: border-box; }
 
 html {
   font-size: 62.5%;
@@ -25,26 +12,24 @@ body {
   color: var(--color-dark);
 }
 
-.banner {
-  text-align: center;
-  margin: var(--space-normal) auto;
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
 }
 
-.banner__mark {
-  margin: 0;
+.page-width {
+  max-width: 85rem;
 }
 
-.banner__name {
-  margin: var(--space-medium) 0 0;
-  padding: 0;
-  font-family: var(--serif);
-  font: 600 4.6rem var(--serif);
-
-  span { color: var(--color-secondary); }
+.page-sections {
+  margin: var(--space-largest) auto;
 }
 
-.banner__text {
-  font-size: 1.6rem;
-  padding: 0;
-  margin: 0;
+.page-sections-article {
+  margin: var(--space-larger) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }

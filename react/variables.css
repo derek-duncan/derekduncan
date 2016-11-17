@@ -1,0 +1,19 @@
+:root {
+  --color-dark: #282B2C;
+  --color-primary: #FF3B3B;
+  --color-secondary: #FFFD54;
+  --color-light-gry: #EEEFF1;
+  --color-medium-gry: #C8CDD4;
+
+  --serif: 'Playfair Display', serif;
+  --sans: 'Karla', sans-serif;
+
+  --space-small: 0.8rem;
+  --space-medium: 1.6rem;
+  --space-normal: 2rem;
+  --space-large: 3.2rem;
+  --space-larger: 4.8rem;
+  --space-largest: 6rem;
+
+  --ls-loose: 1.5px;
+}

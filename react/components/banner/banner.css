@@ -1,0 +1,49 @@
+@import '../../variables.css';
+
+.banner {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.banner__background {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 50rem;
+  height: auto;
+}
+
+.banner__mark {
+  margin: var(--space-large) 0 0;
+  width: 5.4rem;
+  height: auto;
+}
+
+.banner__name {
+  margin: var(--space-medium) 0 0;
+  padding: 0;
+  font-family: var(--serif);
+  font: 600 4.6rem var(--serif);
+
+  span { color: var(--color-secondary); }
+}
+
+.banner__text {
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+}
+
+.banner__icons {
+  display: flex;
+  justify-content: center;
+  margin: var(--space-large) 0 0;
+}
+
+.banner__icon {
+  margin: 0 var(--space-small);
+}
