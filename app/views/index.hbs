@@ -1,5 +1,5 @@
 {{#> layout }}
-  <div class="p3 js-main-container">
+  <div class="px4 py3 js-main-container">
     {{#> pageSection}}
       <h1 class="fs-6 color-primary serif m0 mb1">Derek Duncan</h1>
       <p class="fs-3 color-gry m0">I develop websites. I love the challenge & creativity. Oh! I design sometimes as well.</p>
@@ -15,22 +15,26 @@
         {{/inline}}
 
         {{#>cardWrapper}}
-          {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="/" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
+          {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="#curadora-was-shut-down" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
         {{/cardWrapper}}
         {{#>cardWrapper}}
-          {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="/" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
+          {{> card title="Curadora was shut down" description="Lorem ipsum is simply dummy text" href="#curadora-was-shut-down" imgSrc="http://weknowyourdreams.com/images/mountain/mountain-08.jpg" }}
         {{/cardWrapper}}
       </div>
     {{/pageSection}}
   </div>
 
-  <div class="border-box p3 fixed bottom-0 left-0 col-12 bg-white border-top border-1 border-light-gry js-sticky">
-    {{> subtitle text="Messaging"}}
-    <div class="flex col-12">
-      <img src="/images/command-icon.svg" class="grow-0 shrink-1" />
-      <div class="col-12 pl2">
-        <input class="p1 pt2 col-12 border-0 border-bottom-3 border-dashed outline-none fs-4 sans" placeholder="Type a command...">
-      </div>
-    </div>
-  </div>
+  {{!-- <div class="border-box px4 py3 fixed bottom-0 left-0 col-12 bg-white border-top border-1 border-light-gry js-sticky"> --}}
+  {{!--   {{> subtitle text="Messaging"}} --}}
+  {{!--   <div class="flex col-12"> --}}
+  {{!--     <img src="/images/command-icon.svg" class="grow-0 shrink-1" /> --}}
+  {{!--     <div class="col-12 pl2"> --}}
+  {{!--       <input class="p1 pt2 col-12 border-0 border-bottom-3 border-dashed outline-none fs-4 sans" placeholder="Type a command..."> --}}
+  {{!--     </div> --}}
+  {{!--   </div> --}}
+  {{!-- </div> --}}
+  <section class="absolute display-none col-12 h-100 top-0 left-0 js-storyContainer">
+		<div class="z2 absolute col-8 middle-x-align bg-white border-1 border-light-gry mt4 p3 rounded js-storyContainer-content"></div>
+		<div class="absolute top-0 left-0 bottom-0 right-0 bg-white opacity-70 js-storyContainer-background"></div>
+  </section>
 {{/layout }}
