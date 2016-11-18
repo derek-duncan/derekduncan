@@ -7,7 +7,6 @@
 .lrg-article-card__link {
   cursor: pointer;
   color: var(--color-dark);
-	text-decoration: none;
   transition: color 250ms;
 
   &:hover {
