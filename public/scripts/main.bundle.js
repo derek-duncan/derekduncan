@@ -9850,17 +9850,12 @@ var _root2 = _interopRequireDefault(_root);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var articles = [{
-  title: 'Personal Websites are Something I Never Work On',
-  imgSrc: 'http://www.cement.org/images/default-source/codes-standards/codes_splash.jpg?sfvrsn=0',
-  type: 'Note',
-  date: '12 Sep 2016',
-  category: 'A Collection of Ideas'
-}, {
-  title: 'Personal Websites are Something I Never Work On',
-  imgSrc: 'http://www.cement.org/images/default-source/codes-standards/codes_splash.jpg?sfvrsn=0',
-  type: 'Note',
-  date: '12 Sep 2016',
-  category: 'A Collection of Ideas'
+  title: '361 People Shining a Light for Those in Paris',
+  imgSrc: 'https://cdn-images-1.medium.com/max/800/1*MeXqZXHDBNXRpDfAmqAwJA.jpeg',
+  href: 'https://medium.com/@derekduncan96/361-people-shining-a-light-for-those-in-paris-431e03799f14#.tqplxhtia',
+  type: 'Article',
+  date: '15 Nov 2015',
+  category: 'Experiments'
 }];
 
 var Root = function Root() {
@@ -22305,7 +22300,7 @@ var LargeArticleCard = function LargeArticleCard(_ref) {
     { className: 'lrg-article-card clearfix' },
     _react2.default.createElement(
       'a',
-      { className: 'lrg-article-card__link', href: href },
+      { className: 'lrg-article-card__link', href: href, target: '_blank' },
       _react2.default.createElement(
         'h4',
         { className: 'lrg-article-card__title' },
@@ -22418,7 +22413,7 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, ".lrg-article-card {\n  position: relative;\n}\n\n.lrg-article-card__link {\n  cursor: pointer;\n  color: #282B2C;\n  transition: color 250ms;\n}\n\n.lrg-article-card__link:hover {\n  color: #FF3B3B;\n}\n\n.lrg-article-card__title {\n  font: 600 3.2rem 'Playfair Display', serif;\n  margin: 0 0 2rem;\n  padding: 0;\n}\n\n.lrg-article-card__image {\n  position: relative;\n  overflow: hidden;\n  width: 50%;\n  float: right;\n  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);\n}\n\n.lrg-article-card__image img {\n  width: 100%;\n  height: auto;\n}\n\n.lrg-article-card__image:after {\n  content: '';\n  position: absolute;\n  bottom: -30%;\n  right: -30%;\n  width: 100%;\n  height: 100%;\n  transform: rotate(-40deg);\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.lrg-article-card__props {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  margin: 2rem 0;\n  text-transform: uppercase;\n  color: #C8CDD4;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n\n.lrg-article-card__category {\n  position: absolute;\n  top: 50%;\n  right: -1.2rem;\n  transform: rotate(90deg) translateX(50%); /* transform origin changes perspective btw */\n  transform-origin: right;\n  text-transform: uppercase;\n  color: #C8CDD4;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n", ""]);
+exports.push([module.i, ".lrg-article-card {\n  position: relative;\n}\n\n.lrg-article-card__link {\n  cursor: pointer;\n  color: #282B2C;\n\ttext-decoration: none;\n  transition: color 250ms;\n}\n\n.lrg-article-card__link:hover {\n  color: #FF3B3B;\n}\n\n.lrg-article-card__title {\n  font: 600 3.2rem 'Playfair Display', serif;\n  margin: 0 0 2rem;\n  padding: 0;\n}\n\n.lrg-article-card__image {\n  position: relative;\n  overflow: hidden;\n  width: 50%;\n  float: right;\n  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);\n}\n\n.lrg-article-card__image img {\n  width: 100%;\n  height: auto;\n}\n\n.lrg-article-card__image:after {\n  content: '';\n  position: absolute;\n  bottom: -40%;\n  right: -40%;\n  width: 100%;\n  height: 100%;\n  transform: rotate(-40deg);\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.lrg-article-card__props {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  margin: 2rem 0;\n  text-transform: uppercase;\n  color: #C8CDD4;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n\n.lrg-article-card__category {\n  position: absolute;\n  top: 50%;\n  right: -1.2rem;\n  transform: rotate(90deg) translateX(50%); /* transform origin changes perspective btw */\n  transform-origin: right;\n  text-transform: uppercase;\n  color: #C8CDD4;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n", ""]);
 
 // exports
 
@@ -22432,7 +22427,7 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, ".page-section {\n  display: flex;\n  flex-flow: column nowrap;\n  margin: 4.8rem 0;\n}\n\n.page-section:first-child {\n  margin-top: 0;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section {\n    flex-flow: row nowrap;\n  }\n}\n\n.page-section__info {\n  padding: 0 3.2rem 3.2rem;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section__info {\n    flex: 0 0 150px;\n    padding: 0 3.2rem 0;\n    border-right: 1px solid #C8CDD4;\n  }\n}\n\n.page-section__count {\n  margin: 0;\n  padding: 0;\n  color: #EEEFF1;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.page-section__title {\n  margin: 0;\n  padding: 0;\n  color: #282B2C;\n  font: 600 1.6rem 'Karla', sans-serif;\n  text-transform: uppercase;\n}\n\n.page-section__content {\n  padding: 0 3.2rem;\n}\n", ""]);
+exports.push([module.i, ".page-section {\n  display: flex;\n  flex-flow: column nowrap;\n  margin: 4.8rem 0;\n}\n\n.page-section:first-child {\n  margin-top: 0;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section {\n    flex-flow: row nowrap;\n  }\n}\n\n@media (min-width: 1150px) /* 850 content width + 150 offset * 2 */ {\n\n  .page-section {\n    margin-left: -15rem;\n  }\n}\n\n.page-section__info {\n  padding: 0 3.2rem 3.2rem;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section__info {\n    flex: 0 0 15rem;\n    padding: 0 3.2rem 0;\n    border-right: 1px solid #C8CDD4;\n  }\n}\n\n.page-section__count {\n  margin: 0;\n  padding: 0;\n  color: #C8CDD4;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.page-section__title {\n  margin: 0;\n  padding: 0;\n  color: #282B2C;\n  font: 600 1.6rem 'Karla', sans-serif;\n  text-transform: uppercase;\n}\n\n.page-section__content {\n  padding: 0 3.2rem;\n}\n", ""]);
 
 // exports
 

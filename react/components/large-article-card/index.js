@@ -6,7 +6,7 @@ const LargeArticleCard = ({ article }) => {
 
   return (
     <div className='lrg-article-card clearfix'>
-      <a className='lrg-article-card__link' href={href}>
+      <a className='lrg-article-card__link' href={href} target='_blank'>
         <h4 className='lrg-article-card__title'>{title}</h4>
       </a>
       <div className='lrg-article-card__image'>

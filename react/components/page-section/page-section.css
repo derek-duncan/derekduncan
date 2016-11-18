@@ -12,13 +12,17 @@
   @media (--medium) {
     flex-flow: row nowrap;
   }
+
+  @media (min-width: 1150px) /* 850 content width + 150 offset * 2 */ {
+    margin-left: -15rem;
+  }
 }
 
 .page-section__info {
   padding: 0 var(--space-large) var(--space-large);
 
   @media (--medium) {
-    flex: 0 0 150px;
+    flex: 0 0 15rem;
     padding: 0 var(--space-large) 0;
     border-right: 1px solid var(--color-medium-gry);
   }
@@ -27,7 +31,7 @@
 .page-section__count {
   margin: 0;
   padding: 0;
-  color: var(--color-light-gry);
+  color: var(--color-medium-gry);
   font: 600 4.6rem var(--serif);
 }
 

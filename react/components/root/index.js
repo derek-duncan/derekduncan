@@ -9,18 +9,12 @@ import styles from './root.css'
 
 const articles = [
   {
-    title: 'Personal Websites are Something I Never Work On',
-    imgSrc: 'http://www.cement.org/images/default-source/codes-standards/codes_splash.jpg?sfvrsn=0',
-    type: 'Note',
-    date: '12 Sep 2016',
-    category: 'A Collection of Ideas',
-  },
-  {
-    title: 'Personal Websites are Something I Never Work On',
-    imgSrc: 'http://www.cement.org/images/default-source/codes-standards/codes_splash.jpg?sfvrsn=0',
-    type: 'Note',
-    date: '12 Sep 2016',
-    category: 'A Collection of Ideas',
+    title: '361 People Shining a Light for Those in Paris',
+    imgSrc: 'https://cdn-images-1.medium.com/max/800/1*MeXqZXHDBNXRpDfAmqAwJA.jpeg',
+		href: 'https://medium.com/@derekduncan96/361-people-shining-a-light-for-those-in-paris-431e03799f14#.tqplxhtia',
+    type: 'Article',
+    date: '15 Nov 2015',
+    category: 'Experiments',
   },
 ]
 
