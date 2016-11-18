@@ -12,6 +12,19 @@ body {
   color: var(--color-dark);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--serif);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-primary);
+  transition: color 250ms;
+  &:hover {
+    color: var(--color-primary-dark);
+  }
+}
+
 .clearfix:after {
   content: '';
   display: table;

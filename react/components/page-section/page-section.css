@@ -2,11 +2,17 @@
 
 .page-section {
   display: flex;
+  margin: var(--space-larger) 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .page-section__info {
   border-right: 1px solid var(--color-medium-gry);
   padding: 0 var(--space-large) 0;
+  flex: 0 0 150px;
 }
 
 .page-section__count {

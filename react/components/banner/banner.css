@@ -42,6 +42,14 @@
   display: flex;
   justify-content: center;
   margin: var(--space-large) 0 0;
+
+  a {
+    opacity: 1;
+    transition: opacity 250ms;
+    &:hover {
+      opacity: 0.75;
+    }
+  }
 }
 
 .banner__icon {

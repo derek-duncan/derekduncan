@@ -25,6 +25,7 @@
   overflow: hidden;
   width: 50%;
   float: right;
+  box-shadow: var(--shadow-large);
 
   img {
     width: 100%;

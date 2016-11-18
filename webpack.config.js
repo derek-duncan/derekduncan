@@ -21,7 +21,17 @@ module.exports = {
           'postcss-loader',
         ],
       },
+      {
+        test: /\.md$/,
+        use: [
+          'html-loader',
+          'markdown-loader',
+        ],
+      },
     ],
+  },
+  resolve: {
+    modules: ['node_modules', './react', './docs'],
   },
   entry: {
     derek: './derek.js',

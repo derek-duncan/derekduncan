@@ -1,0 +1,1 @@
+I'm still in the process of creating the right experience for displaying my work on this website. In the meantime, please review my [resume](/resume) and [email me](/email) if you want more information. I'm always happy to answer questions!

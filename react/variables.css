@@ -1,6 +1,7 @@
 :root {
   --color-dark: #282B2C;
   --color-primary: #FF3B3B;
+  --color-primary-dark: #B21717;
   --color-secondary: #FFFD54;
   --color-light-gry: #EEEFF1;
   --color-medium-gry: #C8CDD4;
@@ -16,4 +17,6 @@
   --space-largest: 6rem;
 
   --ls-loose: 1.5px;
+
+  --shadow-large: 0 0 30px rgba(0, 0, 0, 0.15);
 }
