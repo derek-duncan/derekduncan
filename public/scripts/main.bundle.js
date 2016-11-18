@@ -9873,7 +9873,7 @@ var Root = function Root() {
       ),
       _react2.default.createElement(
         _pageSection2.default,
-        { count: '02', title: 'My Ideas' },
+        { count: '02', title: 'My Thoughts' },
         articles.map(function (article, i) {
           return _react2.default.createElement(
             'div',

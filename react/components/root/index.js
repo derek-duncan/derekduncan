@@ -27,7 +27,7 @@ const Root = () => {
           <div dangerouslySetInnerHTML={{ __html: personalDoc }} />
         </PageSection>
 
-        <PageSection count='02' title='My Ideas'>
+        <PageSection count='02' title='My Thoughts'>
           {articles.map((article, i) => (
             <div className='page-sections-article' key={i}>
               <LargeArticleCard article={article} />
