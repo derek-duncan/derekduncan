@@ -2,17 +2,26 @@
 
 .page-section {
   display: flex;
+  flex-flow: column nowrap;
   margin: var(--space-larger) 0;
 
   &:first-child {
     margin-top: 0;
   }
+
+  @media (--medium) {
+    flex-flow: row nowrap;
+  }
 }
 
 .page-section__info {
-  border-right: 1px solid var(--color-medium-gry);
-  padding: 0 var(--space-large) 0;
-  flex: 0 0 150px;
+  padding: 0 var(--space-large) var(--space-large);
+
+  @media (--medium) {
+    flex: 0 0 150px;
+    padding: 0 var(--space-large) 0;
+    border-right: 1px solid var(--color-medium-gry);
+  }
 }
 
 .page-section__count {

@@ -1,0 +1,32 @@
+@import '../../../variables.css';
+
+.qa {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: var(--space-large) 0;
+
+  @media (--medium) {
+    flex-flow: row nowrap;
+  }
+}
+
+.qa__count {
+  padding: 0 0 var(--space-medium);
+  color: var(--color-light-gry);
+  font: 600 4.6rem var(--serif);
+
+  @media (--medium) {
+    flex: 0 0 10rem;
+    padding: 0 var(--space-medium) 0 0;
+  }
+}
+
+.qa__content {
+  h1:first-child,
+  h2:first-child,
+  h3:first-child,
+  h4:first-child,
+  p:first-child {
+    margin-top: 0;
+  }
+}

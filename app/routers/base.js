@@ -4,6 +4,27 @@ const getFileContents = require('../../lib/getFileContents');
 const convertMarkdown = require('../../lib/convertMarkdown');
 const base = new Router();
 
+/**
+ * Main paths
+ */
+
+base.get('/', async function (ctx) {
+  await ctx.render('index.hbs', {
+    partials: {
+      layout: 'partials/layout',
+    },
+  });
+});
+
+base.get('/andyet', async function (ctx) {
+  await ctx.render('andyet.hbs', {
+    useAlternateBundle: true,
+    partials: {
+      layout: 'partials/layout',
+    },
+  });
+});
+
 base.get('/docs/:slug', async function (ctx) {
   try {
     const storyPath = path.resolve(__dirname, '../../docs', `${ctx.params.slug}.md`);
@@ -16,14 +37,6 @@ base.get('/docs/:slug', async function (ctx) {
   } catch (err) {
     ctx.errorMessage.notFound(err);
   }
-});
-
-base.get('/', async function (ctx) {
-  await ctx.render('index.hbs', {
-    partials: {
-      layout: 'partials/layout',
-    },
-  });
 });
 
 /**

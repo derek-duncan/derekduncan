@@ -19,4 +19,11 @@
   --ls-loose: 1.5px;
 
   --shadow-large: 0 0 30px rgba(0, 0, 0, 0.15);
+
+  @custom-media --xsmall (min-width: 20em);
+  @custom-media --small (min-width: 30em);
+  @custom-media --medium (min-width: 37.5em);
+  @custom-media --xmedium (min-width: 48em);
+  @custom-media --large (min-width: 56.25em);
+  @custom-media --xlarge (min-width: 81.25em);
 }

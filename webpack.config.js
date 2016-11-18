@@ -34,7 +34,8 @@ module.exports = {
     modules: ['node_modules', './react', './docs'],
   },
   entry: {
-    derek: './derek.js',
+    main: './index.js',
+    andyet: './andyet/index.js',
   },
   output: {
     path: __dirname + '/public/scripts',

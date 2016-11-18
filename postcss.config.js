@@ -11,9 +11,9 @@ module.exports = {
   plugins: [
     require('postcss-smart-import')(),
     //require('postcss-responsify')(responsifyOptions),
+    require('postcss-nested')(),
     require('postcss-custom-media')(),
     require('postcss-css-variables')(),
-    require('postcss-nested')(),
     require('autoprefixer')({browsers: ['last 1 version']}),
   ]
 }

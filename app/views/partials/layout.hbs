@@ -14,6 +14,8 @@
   </head>
   <body>
     {{> @partial-block }}
-    <script type="text/javascript" src="/scripts/derek.bundle.js"></script>
+    {{#unless useAlternateBundle}}
+      <script type="text/javascript" src="/scripts/main.bundle.js"></script>
+    {{/unless}}
   </body>
 </html>
