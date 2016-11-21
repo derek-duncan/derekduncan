@@ -3,7 +3,7 @@
 .page-section {
   display: flex;
   flex-flow: column nowrap;
-  margin: var(--space-larger) 0;
+  margin: var(--space-largest) 0;
 
   &:first-child {
     margin-top: 0;
@@ -13,7 +13,7 @@
     flex-flow: row nowrap;
   }
 
-  @media (min-width: 1150px) /* 850 content width + 150 offset * 2 */ {
+  @media (min-width: 1050px) { /* 750 content width + 150 offset * 2 */
     margin-left: -15rem;
   }
 }

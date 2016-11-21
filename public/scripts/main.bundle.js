@@ -9835,28 +9835,23 @@ var _largeArticleCard = __webpack_require__(183);
 
 var _largeArticleCard2 = _interopRequireDefault(_largeArticleCard);
 
-var _personal = __webpack_require__(190);
+var _personal = __webpack_require__(191);
 
 var _personal2 = _interopRequireDefault(_personal);
 
-var _myWork = __webpack_require__(189);
+var _myWork = __webpack_require__(190);
 
 var _myWork2 = _interopRequireDefault(_myWork);
 
-var _root = __webpack_require__(194);
+var _homepageArticles = __webpack_require__(185);
+
+var _homepageArticles2 = _interopRequireDefault(_homepageArticles);
+
+var _root = __webpack_require__(195);
 
 var _root2 = _interopRequireDefault(_root);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var articles = [{
-  title: '361 People Shining a Light for Those in Paris',
-  imgSrc: 'https://cdn-images-1.medium.com/max/800/1*MeXqZXHDBNXRpDfAmqAwJA.jpeg',
-  href: 'https://medium.com/@derekduncan96/361-people-shining-a-light-for-those-in-paris-431e03799f14#.tqplxhtia',
-  type: 'Article',
-  date: '15 Nov 2015',
-  category: 'Experiments'
-}];
 
 var Root = function Root() {
   return _react2.default.createElement(
@@ -9874,7 +9869,7 @@ var Root = function Root() {
       _react2.default.createElement(
         _pageSection2.default,
         { count: '02', title: 'My Thoughts' },
-        articles.map(function (article, i) {
+        _homepageArticles2.default.map(function (article, i) {
           return _react2.default.createElement(
             'div',
             { className: 'page-sections-article', key: i },
@@ -22171,7 +22166,7 @@ var _icon = __webpack_require__(182);
 
 var _icon2 = _interopRequireDefault(_icon);
 
-var _banner = __webpack_require__(191);
+var _banner = __webpack_require__(192);
 
 var _banner2 = _interopRequireDefault(_banner);
 
@@ -22279,7 +22274,7 @@ var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _largeArticleCard = __webpack_require__(192);
+var _largeArticleCard = __webpack_require__(193);
 
 var _largeArticleCard2 = _interopRequireDefault(_largeArticleCard);
 
@@ -22352,7 +22347,7 @@ var _react = __webpack_require__(17);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _pageSection = __webpack_require__(193);
+var _pageSection = __webpack_require__(194);
 
 var _pageSection2 = _interopRequireDefault(_pageSection);
 
@@ -22392,17 +22387,24 @@ exports.default = PageSection;
 
 /***/ },
 /* 185 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-exports = module.exports = __webpack_require__(26)();
-// imports
+"use strict";
+'use strict';
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var articles = [{
+  title: '361 People Shining a Light for Those in Paris',
+  imgSrc: 'https://cdn-images-1.medium.com/max/800/1*MeXqZXHDBNXRpDfAmqAwJA.jpeg',
+  href: 'https://medium.com/@derekduncan96/361-people-shining-a-light-for-those-in-paris-431e03799f14#.tqplxhtia',
+  type: 'Article',
+  date: '15 Nov 2015',
+  category: 'Experiments'
+}];
 
-// module
-exports.push([module.i, ".banner {\n  position: relative;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.banner__background {\n  z-index: -1;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100%;\n  max-width: 50rem;\n  height: auto;\n}\n\n.banner__mark {\n  margin: 3.2rem 0 0;\n  width: 5.4rem;\n  height: auto;\n}\n\n.banner__name {\n  margin: 1.6rem 0 0;\n  padding: 0;\n  font-family: 'Playfair Display', serif;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.banner__name span {\n  color: #FFFD54;\n}\n\n.banner__text {\n  font-size: 1.6rem;\n  padding: 0;\n  margin: 0;\n}\n\n.banner__icons {\n  display: flex;\n  justify-content: center;\n  margin: 3.2rem 0 0;\n}\n\n.banner__icons a {\n  opacity: 1;\n  transition: opacity 250ms;\n}\n\n.banner__icons a:hover {\n  opacity: 0.75;\n}\n\n.banner__icon {\n  margin: 0 1.6rem;\n}\n", ""]);
-
-// exports
-
+exports.default = articles;
 
 /***/ },
 /* 186 */
@@ -22413,7 +22415,7 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, ".lrg-article-card {\n  position: relative;\n}\n\n.lrg-article-card__link {\n  cursor: pointer;\n  color: #282B2C;\n  transition: color 250ms;\n}\n\n.lrg-article-card__link:hover {\n  color: #FF3B3B;\n}\n\n.lrg-article-card__title {\n  font: 600 3.2rem 'Playfair Display', serif;\n  margin: 0 0 2rem;\n  padding: 0;\n}\n\n.lrg-article-card__image {\n  position: relative;\n  overflow: hidden;\n  width: 50%;\n  float: right;\n  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);\n}\n\n.lrg-article-card__image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n\n.lrg-article-card__image:after {\n  content: '';\n  position: absolute;\n  bottom: -40%;\n  right: -40%;\n  width: 100%;\n  height: 100%;\n  transform: rotate(-40deg);\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.lrg-article-card__props {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  margin: 2rem 0;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n\n.lrg-article-card__category {\n  position: absolute;\n  top: 50%;\n  right: -1.2rem;\n  transform: rotate(90deg) translateX(50%); /* transform origin changes perspective btw */\n  transform-origin: right;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n", ""]);
+exports.push([module.i, ".banner {\n  position: relative;\n  text-align: center;\n  margin: 0 auto;\n}\n\n.banner__background {\n  z-index: -1;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  width: 100%;\n  max-width: 50rem;\n  height: auto;\n}\n\n.banner__mark {\n  margin: 6rem 0 0;\n  width: 5.4rem;\n  height: auto;\n}\n\n.banner__name {\n  margin: 1.6rem 0 0;\n  padding: 0;\n  font-family: 'Playfair Display', serif;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.banner__name span {\n  color: #FFFD54;\n}\n\n.banner__text {\n  font-size: 1.6rem;\n  padding: 0;\n  margin: 0;\n}\n\n.banner__icons {\n  display: flex;\n  justify-content: center;\n  margin: 3.2rem 0 0;\n}\n\n.banner__icons a {\n  opacity: 1;\n  transition: opacity 250ms;\n}\n\n.banner__icons a:hover {\n  opacity: 0.75;\n}\n\n.banner__icon {\n  margin: 0 1.6rem;\n}\n", ""]);
 
 // exports
 
@@ -22427,7 +22429,7 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, ".page-section {\n  display: flex;\n  flex-flow: column nowrap;\n  margin: 4.8rem 0;\n}\n\n.page-section:first-child {\n  margin-top: 0;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section {\n    flex-flow: row nowrap;\n  }\n}\n\n@media (min-width: 1150px) /* 850 content width + 150 offset * 2 */ {\n\n  .page-section {\n    margin-left: -15rem;\n  }\n}\n\n.page-section__info {\n  padding: 0 3.2rem 3.2rem;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section__info {\n    flex: 0 0 15rem;\n    padding: 0 3.2rem 0;\n    border-right: 1px solid #C8CDD4;\n  }\n}\n\n.page-section__count {\n  margin: 0;\n  padding: 0;\n  color: #C8CDD4;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.page-section__title {\n  margin: 0;\n  padding: 0;\n  color: #282B2C;\n  font: 600 1.6rem 'Karla', sans-serif;\n  text-transform: uppercase;\n}\n\n.page-section__content {\n  padding: 0 3.2rem;\n}\n", ""]);
+exports.push([module.i, ".lrg-article-card {\n  position: relative;\n}\n\n.lrg-article-card__link {\n  cursor: pointer;\n  color: #282B2C;\n  text-decoration: none;\n  transition: color 250ms;\n}\n\n.lrg-article-card__link:hover {\n  color: #FF3B3B;\n}\n\n.lrg-article-card__title {\n  font: 600 3.2rem 'Playfair Display', serif;\n  margin: 0 0 2rem;\n  padding: 0;\n}\n\n.lrg-article-card__image {\n  position: relative;\n  overflow: hidden;\n  width: 50%;\n  float: right;\n  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);\n}\n\n.lrg-article-card__image img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n\n.lrg-article-card__image:after {\n  content: '';\n  position: absolute;\n  bottom: -40%;\n  right: -40%;\n  width: 100%;\n  height: 100%;\n  transform: rotate(-40deg);\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n.lrg-article-card__props {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  margin: 2rem 0;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n\n.lrg-article-card__category {\n  position: absolute;\n  top: 50%;\n  right: -1.2rem;\n  transform: rotate(90deg) translateX(50%); /* transform origin changes perspective btw */\n  transform-origin: right;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n", ""]);
 
 // exports
 
@@ -22441,48 +22443,36 @@ exports = module.exports = __webpack_require__(26)();
 
 
 // module
-exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\n/* Document\n   ========================================================================== */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  line-height: 1.15; /* 2 */\n  -ms-text-size-adjust: 100%; /* 3 */\n  -webkit-text-size-adjust: 100%; /* 3 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n\n* { box-sizing: border-box; }\n\nhtml {\n  font-size: 62.5%;\n}\n\nbody {\n  font: 1.8rem 'Karla', sans-serif;\n  color: #282B2C;\n\tbackground-color: #FEFEFE;\n}\n\nh1 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh2 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh3 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh4 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh5 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh6 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\na {\n  color: #FF3B3B;\n  transition: color 250ms;\n}\n\na:hover {\n  color: #B21717;\n}\n\n.clearfix:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n\n.page-width {\n  max-width: 85rem;\n}\n\n.page-sections {\n  margin: 6rem auto;\n}\n\n.page-sections-article {\n  margin: 4.8rem 0;\n}\n\n.page-sections-article:first-child {\n  margin-top: 0;\n}\n\n.page-sections-article:last-child {\n  margin-bottom: 0;\n}\n", ""]);
+exports.push([module.i, ".page-section {\n  display: flex;\n  flex-flow: column nowrap;\n  margin: 6rem 0;\n}\n\n.page-section:first-child {\n  margin-top: 0;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section {\n    flex-flow: row nowrap;\n  }\n}\n\n@media (min-width: 1050px) {\n\n  .page-section {\n    /* 750 content width + 150 offset * 2 */\n    margin-left: -15rem;\n  }\n}\n\n.page-section__info {\n  padding: 0 3.2rem 3.2rem;\n}\n\n@media (min-width: 37.5em) {\n\n  .page-section__info {\n    flex: 0 0 15rem;\n    padding: 0 3.2rem 0;\n    border-right: 1px solid #C8CDD4;\n  }\n}\n\n.page-section__count {\n  margin: 0;\n  padding: 0;\n  color: #C8CDD4;\n  font: 600 4.6rem 'Playfair Display', serif;\n}\n\n.page-section__title {\n  margin: 0;\n  padding: 0;\n  color: #282B2C;\n  font: 600 1.6rem 'Karla', sans-serif;\n  text-transform: uppercase;\n}\n\n.page-section__content {\n  padding: 0 3.2rem;\n}\n", ""]);
 
 // exports
 
 
 /***/ },
 /* 189 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-module.exports = "<p>I&#39;m still in the process of creating the right experience for displaying my work on this website. In the meantime, please review my <a href=\"/resume\">resume</a> and <a href=\"/email\">email me</a> if you want more information. I&#39;m always happy to answer questions!</p>\n";
+exports = module.exports = __webpack_require__(26)();
+// imports
+
+
+// module
+exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\n/* Document\n   ========================================================================== */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  line-height: 1.15; /* 2 */\n  -ms-text-size-adjust: 100%; /* 3 */\n  -webkit-text-size-adjust: 100%; /* 3 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n\n* { box-sizing: border-box; }\n\nhtml {\n  font-size: 62.5%;\n}\n\nbody {\n  font: 1.8rem/1.4 'Karla', sans-serif;\n  color: #282B2C;\n\tbackground-color: #FEFEFE;\n}\n\nh1 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh2 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh3 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh4 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh5 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh6 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\na {\n  color: #FF3B3B;\n  transition: color 250ms;\n}\n\na:hover {\n  color: #B21717;\n}\n\n.clearfix:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n\n.page-width {\n  max-width: 75rem;\n}\n\n.page-sections {\n  margin: 6rem auto;\n}\n\n.page-sections-article {\n  margin: 4.8rem 0;\n}\n\n.page-sections-article:first-child {\n  margin-top: 0;\n}\n\n.page-sections-article:last-child {\n  margin-bottom: 0;\n}\n", ""]);
+
+// exports
+
 
 /***/ },
 /* 190 */
 /***/ function(module, exports) {
 
-module.exports = "<h2 id=\"welcome-\">Welcome!</h2>\n<p>Here are a few quick links if you&#39;re looking for something specific.</p>\n<p><a href=\"/resume\">Resume</a> | <a href=\"/email\">Email</a></p>\n<p>I find meeting people one of the most exciting and wonderful parts of life. It&#39;s is a pleasure to see you here, and I would love become acquainted! Connect with me on <a href=\"https://twitter.com/DerekDuncan96\">Twitter</a> when you get a chance.</p>\n<p>Now, a little about me.</p>\n<p>I am presently engaged to marry my fiance, Ginny, in December of 2016, and start our new journey through life together. I am so excited!</p>\n<p>I am a serial hobbier (I don&#39;t believe this is an official term, though :).</p>\n<p>I play ukulele and guitar when I am lost in thought.</p>\n<p>Exercise has always been a passion/conviction of mine, so I play basketball and mess around on the pullup bar often. It&#39;s a great way to clear the head!</p>\n<p>Also, I think drawing is one of the most relaxing ways to spend an early morning or lunchtime. I&#39;m presently sketch-noting at every oppertunity I get.</p>\n<p>Otherwise, I am fascinated by learning, so I spend my extra time reading books or Medium articles on the ways of business, creativity, and history. I code my ideas into the internet with the most thoughtful designs and experiences the idea inspires.</p>\n<p>Please see my continued thoughts and work below. Cheers!</p>\n";
+module.exports = "<p>I&#39;m still in the process of creating the right experience for displaying my work on this website. In the meantime, please review my <a href=\"/resume\">resume</a> and <a href=\"/email\">email me</a> if you want more information. I&#39;m always happy to answer questions!</p>\n";
 
 /***/ },
 /* 191 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(185);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(34)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./banner.css", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./banner.css");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
+module.exports = "<h2 id=\"welcome-\">Welcome!</h2>\n<p>Here are a few quick links if you&#39;re looking for something specific.</p>\n<p><a href=\"/resume\">Resume</a> | <a href=\"/email\">Email</a></p>\n<p>I find meeting people one of the most exciting and wonderful parts of life. It&#39;s is a pleasure to see you here, and I would love become acquainted! Connect with me on <a href=\"https://twitter.com/DerekDuncan96\">Twitter</a> when you get a chance.</p>\n<p>Now, a little about me.</p>\n<p>I am presently engaged to marry my fiance, Ginny, in December of 2016, and start our new journey through life together. I am so excited!</p>\n<p>I am a serial hobbier (I don&#39;t believe this is an official term, though :).</p>\n<p>I play ukulele and guitar when I am lost in thought.</p>\n<p>Exercise has always been a passion/conviction of mine, so I play basketball and mess around on the pullup bar often. It&#39;s a great way to clear the head!</p>\n<p>Also, I think drawing is one of the most relaxing ways to spend an early morning or lunchtime. I&#39;m presently sketch-noting at every oppertunity I get.</p>\n<p>Otherwise, I am fascinated by learning, so I spend my extra time reading books or Medium articles on the ways of business, creativity, and history. I code my ideas into the internet with the most thoughtful designs and experiences the idea inspires.</p>\n<p>Please see my continued thoughts and work below. Cheers!</p>\n";
 
 /***/ },
 /* 192 */
@@ -22500,8 +22490,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./large-article-card.css", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./large-article-card.css");
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./banner.css", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./banner.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -22526,8 +22516,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./page-section.css", function() {
-			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./page-section.css");
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./large-article-card.css", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./large-article-card.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -22552,6 +22542,32 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
+		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./page-section.css", function() {
+			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./page-section.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ },
+/* 195 */
+/***/ function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(189);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(34)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
 		module.hot.accept("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./root.css", function() {
 			var newContent = require("!!./../../../node_modules/css-loader/index.js?importLoaders=1!./../../../node_modules/postcss-loader/index.js!./root.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
@@ -22563,7 +22579,6 @@ if(false) {
 }
 
 /***/ },
-/* 195 */,
 /* 196 */
 /***/ function(module, exports, __webpack_require__) {
 

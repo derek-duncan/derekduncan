@@ -18,7 +18,7 @@
 }
 
 .banner__mark {
-  margin: var(--space-large) 0 0;
+  margin: var(--space-largest) 0 0;
   width: 5.4rem;
   height: auto;
 }

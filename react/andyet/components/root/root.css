@@ -1,9 +1,0 @@
-@import '../../../index.css';
-
-.page-width {
-  max-width: 80rem;
-}
-
-.page-sections {
-  margin: var(--space-largest) auto;
-}
