@@ -13,7 +13,7 @@ const ChatBubble = (props) => {
     'chat-bubble--reverse': external,
   })
   return (
-    <Motion defaultStyle={{x: -25}} style={{x: spring(0, presets.wobbly)}}>
+    <Motion defaultStyle={{x: 25}} style={{x: spring(0, presets.wobbly)}}>
       {({x}) => (
         <div
           className={classes}
