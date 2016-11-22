@@ -23885,16 +23885,18 @@ var ChatBubble = function ChatBubble(props) {
   });
   return _react2.default.createElement(
     _reactMotion.Motion,
-    { defaultStyle: { x: 25 }, style: { x: (0, _reactMotion.spring)(0, _reactMotion.presets.wobbly) } },
+    { defaultStyle: { x: 25, o: 0 }, style: { x: (0, _reactMotion.spring)(0, _reactMotion.presets.wobbly), o: (0, _reactMotion.spring)(1) } },
     function (_ref) {
-      var x = _ref.x;
+      var x = _ref.x,
+          o = _ref.o;
       return _react2.default.createElement(
         'div',
         {
           className: classes,
           style: {
             WebkitTransform: 'translateY(' + x + 'px)',
-            transform: 'translateY(' + x + 'px)'
+            transform: 'translateY(' + x + 'px)',
+            opacity: o
           } },
         _react2.default.createElement(
           'div',

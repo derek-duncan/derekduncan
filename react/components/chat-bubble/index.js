@@ -13,13 +13,14 @@ const ChatBubble = (props) => {
     'chat-bubble--reverse': external,
   })
   return (
-    <Motion defaultStyle={{x: 25}} style={{x: spring(0, presets.wobbly)}}>
-      {({x}) => (
+    <Motion defaultStyle={{x: 25, o: 0}} style={{x: spring(0, presets.wobbly), o: spring(1)}}>
+      {({ x, o }) => (
         <div
           className={classes}
           style={{
             WebkitTransform: `translateY(${x}px)`,
             transform: `translateY(${x}px)`,
+            opacity: o,
           }}>
           <div className='chat-bubble__circles'>
             <div className='chat-bubble__circle chat-bubble__circle--small' />
