@@ -9,6 +9,7 @@
     "basscss": "^8.0.2",
     "basscss-responsive-margin": "^1.1.0",
     "basscss-responsive-padding": "^1.1.0",
+    "classnames": "^2.2.5",
     "handlebars": "^4.0.6",
     "koa": "^2.0.0-alpha.7",
     "koa-bodyparser": "^3.2.0",
@@ -20,7 +21,8 @@
     "marked": "^0.3.6",
     "normalize.css": "^5.0.0",
     "react": "^15.4.0",
-    "react-dom": "^15.4.0"
+    "react-dom": "^15.4.0",
+    "react-motion": "^0.4.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
