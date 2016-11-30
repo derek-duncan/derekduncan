@@ -5,7 +5,7 @@ import LargeArticleCard from 'components/large-article-card'
 import Chat from 'components/chat'
 import personalDoc from 'personal.md'
 import myWorkDoc from 'my-work.md'
-import articles from 'homepage-articles'
+import articles from 'homepageArticles'
 import cn from 'classnames'
 
 import styles from './root.css'

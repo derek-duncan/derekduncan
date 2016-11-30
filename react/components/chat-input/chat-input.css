@@ -1,3 +1,24 @@
 @import '../../index.css';
 
-.chat-input {}
+.chat-input-container {
+  margin-top: var(--space-small);
+}
+
+.chat-input {
+  width: 100%;
+  padding: var(--space-small) var(--space-medium);
+  box-shadow: 0 0.2rem 0.5rem var(--color-light-gry);
+  border: 1px solid #fff;
+  color: var(--color-dark-gry);
+  font-size: 1.6rem;
+  font-weight: 200;
+  outline: none;
+  letter-spacing: var(--ls-loose);
+  transition: all 250ms;
+  vertical-align: middle;
+
+  &:focus {
+    border-color: var(--color-light-gry);
+    box-shadow: 0 0.2rem 0.5rem var(--color-medium-gry);
+  }
+}

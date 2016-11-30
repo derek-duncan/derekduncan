@@ -5,7 +5,7 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  margin-top: var(--space-medium);
+  margin-top: var(--space-small);
 }
 
 .chat-bubble--reverse {
