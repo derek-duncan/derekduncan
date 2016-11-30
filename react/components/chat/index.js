@@ -30,7 +30,7 @@ class Chat extends React.Component {
   render() {
     const { messages } = this.state
     return (
-      <div className='chat'>
+      <div className={styles.chat}>
         {messages.map((message, i) => (
           <ChatBubble text={message.text} external={message.external} key={i} />
         ))}

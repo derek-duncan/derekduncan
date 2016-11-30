@@ -10135,6 +10135,10 @@ var _homepageArticles = __webpack_require__(204);
 
 var _homepageArticles2 = _interopRequireDefault(_homepageArticles);
 
+var _classnames = __webpack_require__(93);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 var _root = __webpack_require__(218);
 
 var _root2 = _interopRequireDefault(_root);
@@ -10148,7 +10152,7 @@ var Root = function Root() {
     _react2.default.createElement(_banner2.default, null),
     _react2.default.createElement(
       'div',
-      { className: 'page-sections page-width' },
+      { className: (0, _classnames2.default)(_root2.default.pageSections, _root2.default.pageWidth) },
       _react2.default.createElement(
         _pageSection2.default,
         { count: '01', title: 'Chat with me' },
@@ -10165,7 +10169,7 @@ var Root = function Root() {
         _homepageArticles2.default.map(function (article, i) {
           return _react2.default.createElement(
             'div',
-            { className: 'page-sections-article', key: i },
+            { className: _root2.default.pageSectionsArticle, key: i },
             _react2.default.createElement(_largeArticleCard2.default, { article: article })
           );
         })
@@ -23804,11 +23808,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Banner = function Banner() {
   return _react2.default.createElement(
     'div',
-    { className: 'banner' },
-    _react2.default.createElement('img', { className: 'banner__mark', src: '/images/mark.svg' }),
+    { className: _banner2.default.banner },
+    _react2.default.createElement('img', { className: _banner2.default.bannerMark, src: '/images/mark.svg' }),
     _react2.default.createElement(
       'h1',
-      { className: 'banner__name' },
+      { className: _banner2.default.bannerName },
       'Derek Duncan',
       _react2.default.createElement(
         'span',
@@ -23818,27 +23822,27 @@ var Banner = function Banner() {
     ),
     _react2.default.createElement(
       'p',
-      { className: 'banner__text' },
+      { className: _banner2.default.bannerText },
       'A Website Developer and Designer in Tulsa, Oklahoma.'
     ),
-    _react2.default.createElement('img', { className: 'banner__background', src: '/images/profile-image.png' }),
+    _react2.default.createElement('img', { className: _banner2.default.bannerBackground, src: '/images/profile-image.png' }),
     _react2.default.createElement(
       'div',
-      { className: 'banner__icons' },
+      { className: _banner2.default.bannerIcons },
       _react2.default.createElement(
         'a',
         { href: '/github', title: 'Github', target: '_blank' },
-        _react2.default.createElement(_icon2.default, { className: 'banner__icon', type: 'github' })
+        _react2.default.createElement(_icon2.default, { className: _banner2.default.bannerIcon, type: 'github' })
       ),
       _react2.default.createElement(
         'a',
         { href: '/insta', title: 'Instagram', target: '_blank' },
-        _react2.default.createElement(_icon2.default, { className: 'banner__icon', type: 'insta' })
+        _react2.default.createElement(_icon2.default, { className: _banner2.default.bannerIcon, type: 'insta' })
       ),
       _react2.default.createElement(
         'a',
         { href: '/twitter', title: 'Twitter', target: '_blank' },
-        _react2.default.createElement(_icon2.default, { className: 'banner__icon', type: 'twitter' })
+        _react2.default.createElement(_icon2.default, { className: _banner2.default.bannerIcon, type: 'twitter' })
       )
     )
   );
@@ -23873,16 +23877,15 @@ var _chatBubble2 = _interopRequireDefault(_chatBubble);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 var ChatBubble = function ChatBubble(props) {
+  var _cn;
+
   var text = props.text,
       external = props.external;
 
-  var classes = (0, _classnames2.default)({
-    'chat-bubble': true,
-    'chat-bubble--color': !external,
-    'chat-bubble--no-color': external,
-    'chat-bubble--reverse': external
-  });
+  var classes = (0, _classnames2.default)((_cn = {}, _defineProperty(_cn, _chatBubble2.default.chatBubble, true), _defineProperty(_cn, _chatBubble2.default.chatBubbleColor, !external), _defineProperty(_cn, _chatBubble2.default.chatBubbleNoColor, external), _defineProperty(_cn, _chatBubble2.default.chatBubbleReverse, external), _cn));
   return _react2.default.createElement(
     _reactMotion.Motion,
     { defaultStyle: { x: 25, o: 0 }, style: { x: (0, _reactMotion.spring)(0, _reactMotion.presets.wobbly), o: (0, _reactMotion.spring)(1) } },
@@ -23900,13 +23903,13 @@ var ChatBubble = function ChatBubble(props) {
           } },
         _react2.default.createElement(
           'div',
-          { className: 'chat-bubble__circles' },
-          _react2.default.createElement('div', { className: 'chat-bubble__circle chat-bubble__circle--small' }),
-          _react2.default.createElement('div', { className: 'chat-bubble__circle' })
+          { className: _chatBubble2.default.chatBubbleCircles },
+          _react2.default.createElement('div', { className: (0, _classnames2.default)(_chatBubble2.default.chatBubbleCircle, _chatBubble2.default.chatBubbleCircleSmall) }),
+          _react2.default.createElement('div', { className: _chatBubble2.default.chatBubbleCircle })
         ),
         _react2.default.createElement(
           'div',
-          { className: 'chat-bubble__text' },
+          { className: _chatBubble2.default.chatBubbleText },
           text
         )
       );
@@ -23991,7 +23994,7 @@ var Chat = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'chat' },
+        { className: _chat2.default.chat },
         messages.map(function (message, i) {
           return _react2.default.createElement(_chatBubble2.default, { text: message.text, external: message.external, key: i });
         })
@@ -24079,24 +24082,24 @@ var LargeArticleCard = function LargeArticleCard(_ref) {
 
   return _react2.default.createElement(
     'div',
-    { className: 'lrg-article-card clearfix' },
+    { className: _largeArticleCard2.default.lrgArticleCard },
     _react2.default.createElement(
       'a',
-      { className: 'lrg-article-card__link', href: href, target: '_blank' },
+      { className: _largeArticleCard2.default.lrgArticleCardLink, href: href, target: '_blank' },
       _react2.default.createElement(
         'h4',
-        { className: 'lrg-article-card__title' },
+        { className: _largeArticleCard2.default.lrgArticleCardTitle },
         title
       )
     ),
     _react2.default.createElement(
       'div',
-      { className: 'lrg-article-card__image' },
+      { className: _largeArticleCard2.default.lrgArticleCardImage },
       _react2.default.createElement('img', { src: imgSrc })
     ),
     _react2.default.createElement(
       'div',
-      { className: 'lrg-article-card__props' },
+      { className: _largeArticleCard2.default.lrgArticleCardProps },
       _react2.default.createElement(
         'span',
         null,
@@ -24107,7 +24110,7 @@ var LargeArticleCard = function LargeArticleCard(_ref) {
     ),
     _react2.default.createElement(
       'div',
-      { className: 'lrg-article-card__category' },
+      { className: _largeArticleCard2.default.lrgArticleCardCategory },
       _react2.default.createElement(
         'span',
         null,
@@ -24147,24 +24150,24 @@ var PageSection = function PageSection(props) {
 
   return _react2.default.createElement(
     'div',
-    { className: 'page-section' },
+    { className: _pageSection2.default.pageSection },
     _react2.default.createElement(
       'div',
-      { className: 'page-section__info' },
+      { className: _pageSection2.default.pageSectionInfo },
       _react2.default.createElement(
         'strong',
-        { className: 'page-section__count' },
+        { className: _pageSection2.default.pageSectionCount },
         count
       ),
       _react2.default.createElement(
         'h3',
-        { className: 'page-section__title' },
+        { className: _pageSection2.default.pageSectionTitle },
         title
       )
     ),
     _react2.default.createElement(
       'div',
-      { className: 'page-section__content' },
+      { className: _pageSection2.default.pageSectionContent },
       children
     )
   );
@@ -24280,15 +24283,15 @@ exports.locals = {
 
 exports = module.exports = __webpack_require__(18)();
 // imports
-
+exports.i(__webpack_require__(220), undefined);
 
 // module
 exports.push([module.i, "._4T-iqjWZbvA0FJw9PvN_m {\n  position: relative;\n}\n\n.c8nn7z7lkY_8vC5IBoj8V {\n  cursor: pointer;\n  color: #282B2C;\n  text-decoration: none;\n  transition: color 250ms;\n}\n\n.c8nn7z7lkY_8vC5IBoj8V:hover {\n  color: #FF3B3B;\n}\n\n._3Sg-CRnOE40xmEtH4gCS1C {\n  font: 600 3.2rem 'Playfair Display', serif;\n  margin: 0 0 2rem;\n  padding: 0;\n}\n\n._3PlIDAYKj1HLB_fgAOZIVS {\n  position: relative;\n  overflow: hidden;\n  width: 50%;\n  float: right;\n  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);\n}\n\n._3PlIDAYKj1HLB_fgAOZIVS img {\n  display: block;\n  width: 100%;\n  height: auto;\n}\n\n._3PlIDAYKj1HLB_fgAOZIVS:after {\n  content: '';\n  position: absolute;\n  bottom: -40%;\n  right: -40%;\n  width: 100%;\n  height: 100%;\n  transform: rotate(-40deg);\n  background-color: rgba(255, 255, 255, 0.5);\n}\n\n._2aLzHVFZFU-r0xvOh13HFE {\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  margin: 2rem 0;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n\n._3T9q6P-QUEhST5vSXY5HE5 {\n  position: absolute;\n  top: 50%;\n  right: -1.2rem;\n  transform: rotate(90deg) translateX(50%); /* transform origin changes perspective btw */\n  transform-origin: right;\n  text-transform: uppercase;\n  color: #7A8189;\n  font-size: 1.2rem;\n  letter-spacing: 1.5px;\n}\n", ""]);
 
 // exports
 exports.locals = {
-	"lrg-article-card": "_4T-iqjWZbvA0FJw9PvN_m",
-	"lrgArticleCard": "_4T-iqjWZbvA0FJw9PvN_m",
+	"lrg-article-card": "_4T-iqjWZbvA0FJw9PvN_m " + __webpack_require__(220).locals["clearfix"] + "",
+	"lrgArticleCard": "_4T-iqjWZbvA0FJw9PvN_m " + __webpack_require__(220).locals["clearfix"] + "",
 	"lrg-article-card__link": "c8nn7z7lkY_8vC5IBoj8V",
 	"lrgArticleCardLink": "c8nn7z7lkY_8vC5IBoj8V",
 	"lrg-article-card__title": "_3Sg-CRnOE40xmEtH4gCS1C",
@@ -24540,6 +24543,23 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var mountNode = document.querySelector('#react-root');
 _reactDom2.default.render(_react2.default.createElement(_root2.default, null), mountNode);
+
+/***/ },
+/* 220 */
+/***/ function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(18)();
+// imports
+
+
+// module
+exports.push([module.i, "/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */\n\n/**\n * 1. Change the default font family in all browsers (opinionated).\n * 2. Correct the line height in all browsers.\n * 3. Prevent adjustments of font size after orientation changes in\n *    IE on Windows Phone and in iOS.\n */\n\n/* Document\n   ========================================================================== */\n\nhtml {\n  font-family: sans-serif; /* 1 */\n  line-height: 1.15; /* 2 */\n  -ms-text-size-adjust: 100%; /* 3 */\n  -webkit-text-size-adjust: 100%; /* 3 */\n}\n\n/* Sections\n   ========================================================================== */\n\n/**\n * Remove the margin in all browsers (opinionated).\n */\n\nbody {\n  margin: 0;\n}\n\n/**\n * Add the correct display in IE 9-.\n */\n\narticle,\naside,\nfooter,\nheader,\nnav,\nsection {\n  display: block;\n}\n\n/**\n * Correct the font size and margin on `h1` elements within `section` and\n * `article` contexts in Chrome, Firefox, and Safari.\n */\n\nh1 {\n  font-size: 2em;\n  margin: 0.67em 0;\n}\n\n/* Grouping content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n * 1. Add the correct display in IE.\n */\n\nfigcaption,\nfigure,\nmain { /* 1 */\n  display: block;\n}\n\n/**\n * Add the correct margin in IE 8.\n */\n\nfigure {\n  margin: 1em 40px;\n}\n\n/**\n * 1. Add the correct box sizing in Firefox.\n * 2. Show the overflow in Edge and IE.\n */\n\nhr {\n  box-sizing: content-box; /* 1 */\n  height: 0; /* 1 */\n  overflow: visible; /* 2 */\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\npre {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/* Text-level semantics\n   ========================================================================== */\n\n/**\n * 1. Remove the gray background on active links in IE 10.\n * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.\n */\n\na {\n  background-color: transparent; /* 1 */\n  -webkit-text-decoration-skip: objects; /* 2 */\n}\n\n/**\n * Remove the outline on focused links when they are also active or hovered\n * in all browsers (opinionated).\n */\n\na:active,\na:hover {\n  outline-width: 0;\n}\n\n/**\n * 1. Remove the bottom border in Firefox 39-.\n * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.\n */\n\nabbr[title] {\n  border-bottom: none; /* 1 */\n  text-decoration: underline; /* 2 */\n  text-decoration: underline dotted; /* 2 */\n}\n\n/**\n * Prevent the duplicate application of `bolder` by the next rule in Safari 6.\n */\n\nb,\nstrong {\n  font-weight: inherit;\n}\n\n/**\n * Add the correct font weight in Chrome, Edge, and Safari.\n */\n\nb,\nstrong {\n  font-weight: bolder;\n}\n\n/**\n * 1. Correct the inheritance and scaling of font size in all browsers.\n * 2. Correct the odd `em` font sizing in all browsers.\n */\n\ncode,\nkbd,\nsamp {\n  font-family: monospace, monospace; /* 1 */\n  font-size: 1em; /* 2 */\n}\n\n/**\n * Add the correct font style in Android 4.3-.\n */\n\ndfn {\n  font-style: italic;\n}\n\n/**\n * Add the correct background and color in IE 9-.\n */\n\nmark {\n  background-color: #ff0;\n  color: #000;\n}\n\n/**\n * Add the correct font size in all browsers.\n */\n\nsmall {\n  font-size: 80%;\n}\n\n/**\n * Prevent `sub` and `sup` elements from affecting the line height in\n * all browsers.\n */\n\nsub,\nsup {\n  font-size: 75%;\n  line-height: 0;\n  position: relative;\n  vertical-align: baseline;\n}\n\nsub {\n  bottom: -0.25em;\n}\n\nsup {\n  top: -0.5em;\n}\n\n/* Embedded content\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\naudio,\nvideo {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in iOS 4-7.\n */\n\naudio:not([controls]) {\n  display: none;\n  height: 0;\n}\n\n/**\n * Remove the border on images inside links in IE 10-.\n */\n\nimg {\n  border-style: none;\n}\n\n/**\n * Hide the overflow in IE.\n */\n\nsvg:not(:root) {\n  overflow: hidden;\n}\n\n/* Forms\n   ========================================================================== */\n\n/**\n * 1. Change the font styles in all browsers (opinionated).\n * 2. Remove the margin in Firefox and Safari.\n */\n\nbutton,\ninput,\noptgroup,\nselect,\ntextarea {\n  font-family: sans-serif; /* 1 */\n  font-size: 100%; /* 1 */\n  line-height: 1.15; /* 1 */\n  margin: 0; /* 2 */\n}\n\n/**\n * Show the overflow in IE.\n * 1. Show the overflow in Edge.\n */\n\nbutton,\ninput { /* 1 */\n  overflow: visible;\n}\n\n/**\n * Remove the inheritance of text transform in Edge, Firefox, and IE.\n * 1. Remove the inheritance of text transform in Firefox.\n */\n\nbutton,\nselect { /* 1 */\n  text-transform: none;\n}\n\n/**\n * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`\n *    controls in Android 4.\n * 2. Correct the inability to style clickable types in iOS and Safari.\n */\n\nbutton,\nhtml [type=\"button\"], /* 1 */\n[type=\"reset\"],\n[type=\"submit\"] {\n  -webkit-appearance: button; /* 2 */\n}\n\n/**\n * Remove the inner border and padding in Firefox.\n */\n\nbutton::-moz-focus-inner,\n[type=\"button\"]::-moz-focus-inner,\n[type=\"reset\"]::-moz-focus-inner,\n[type=\"submit\"]::-moz-focus-inner {\n  border-style: none;\n  padding: 0;\n}\n\n/**\n * Restore the focus styles unset by the previous rule.\n */\n\nbutton:-moz-focusring,\n[type=\"button\"]:-moz-focusring,\n[type=\"reset\"]:-moz-focusring,\n[type=\"submit\"]:-moz-focusring {\n  outline: 1px dotted ButtonText;\n}\n\n/**\n * Change the border, margin, and padding in all browsers (opinionated).\n */\n\nfieldset {\n  border: 1px solid #c0c0c0;\n  margin: 0 2px;\n  padding: 0.35em 0.625em 0.75em;\n}\n\n/**\n * 1. Correct the text wrapping in Edge and IE.\n * 2. Correct the color inheritance from `fieldset` elements in IE.\n * 3. Remove the padding so developers are not caught out when they zero out\n *    `fieldset` elements in all browsers.\n */\n\nlegend {\n  box-sizing: border-box; /* 1 */\n  color: inherit; /* 2 */\n  display: table; /* 1 */\n  max-width: 100%; /* 1 */\n  padding: 0; /* 3 */\n  white-space: normal; /* 1 */\n}\n\n/**\n * 1. Add the correct display in IE 9-.\n * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.\n */\n\nprogress {\n  display: inline-block; /* 1 */\n  vertical-align: baseline; /* 2 */\n}\n\n/**\n * Remove the default vertical scrollbar in IE.\n */\n\ntextarea {\n  overflow: auto;\n}\n\n/**\n * 1. Add the correct box sizing in IE 10-.\n * 2. Remove the padding in IE 10-.\n */\n\n[type=\"checkbox\"],\n[type=\"radio\"] {\n  box-sizing: border-box; /* 1 */\n  padding: 0; /* 2 */\n}\n\n/**\n * Correct the cursor style of increment and decrement buttons in Chrome.\n */\n\n[type=\"number\"]::-webkit-inner-spin-button,\n[type=\"number\"]::-webkit-outer-spin-button {\n  height: auto;\n}\n\n/**\n * 1. Correct the odd appearance in Chrome and Safari.\n * 2. Correct the outline style in Safari.\n */\n\n[type=\"search\"] {\n  -webkit-appearance: textfield; /* 1 */\n  outline-offset: -2px; /* 2 */\n}\n\n/**\n * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.\n */\n\n[type=\"search\"]::-webkit-search-cancel-button,\n[type=\"search\"]::-webkit-search-decoration {\n  -webkit-appearance: none;\n}\n\n/**\n * 1. Correct the inability to style clickable types in iOS and Safari.\n * 2. Change font properties to `inherit` in Safari.\n */\n\n::-webkit-file-upload-button {\n  -webkit-appearance: button; /* 1 */\n  font: inherit; /* 2 */\n}\n\n/* Interactive\n   ========================================================================== */\n\n/*\n * Add the correct display in IE 9-.\n * 1. Add the correct display in Edge, IE, and Firefox.\n */\n\ndetails, /* 1 */\nmenu {\n  display: block;\n}\n\n/*\n * Add the correct display in all browsers.\n */\n\nsummary {\n  display: list-item;\n}\n\n/* Scripting\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 9-.\n */\n\ncanvas {\n  display: inline-block;\n}\n\n/**\n * Add the correct display in IE.\n */\n\ntemplate {\n  display: none;\n}\n\n/* Hidden\n   ========================================================================== */\n\n/**\n * Add the correct display in IE 10-.\n */\n\n[hidden] {\n  display: none;\n}\n\n* { box-sizing: border-box; }\n\nhtml {\n  font-size: 62.5%;\n}\n\nbody {\n  font: 1.8rem/1.4 'Karla', sans-serif;\n  color: #282B2C;\n\tbackground-color: #FEFEFE;\n}\n\nh1 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh2 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh3 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh4 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh5 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\nh6 {\n  font-family: 'Playfair Display', serif;\n  font-weight: 600;\n}\n\na {\n  color: #FF3B3B;\n  transition: color 250ms;\n}\n\na:hover {\n  color: #B21717;\n}\n\n._3-qUOESU11SlMOnLkRsvuT:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n\n", ""]);
+
+// exports
+exports.locals = {
+	"clearfix": "_3-qUOESU11SlMOnLkRsvuT",
+	"clearfix": "_3-qUOESU11SlMOnLkRsvuT"
+};
 
 /***/ }
 /******/ ]);

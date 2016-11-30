@@ -5,17 +5,17 @@ const LargeArticleCard = ({ article }) => {
   const { title, href, type, date, category, imgSrc } = article
 
   return (
-    <div className='lrg-article-card clearfix'>
-      <a className='lrg-article-card__link' href={href} target='_blank'>
-        <h4 className='lrg-article-card__title'>{title}</h4>
+    <div className={styles.lrgArticleCard}>
+      <a className={styles.lrgArticleCardLink} href={href} target='_blank'>
+        <h4 className={styles.lrgArticleCardTitle}>{title}</h4>
       </a>
-      <div className='lrg-article-card__image'>
+      <div className={styles.lrgArticleCardImage}>
         <img src={imgSrc} />
       </div>
-      <div className='lrg-article-card__props'>
+      <div className={styles.lrgArticleCardProps}>
         <span>{type} / Posted on {date}</span>
       </div>
-      <div className='lrg-article-card__category'>
+      <div className={styles.lrgArticleCardCategory}>
         <span>{category}</span>
       </div>
     </div>

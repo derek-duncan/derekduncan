@@ -4,13 +4,13 @@ import styles from './page-section.css'
 const PageSection = (props) => {
   const { count, title, children } = props
   return (
-    <div className='page-section'>
-      <div className='page-section__info'>
-        <strong className='page-section__count'>{count}</strong>
-        <h3 className='page-section__title'>{title}</h3>
+    <div className={styles.pageSection}>
+      <div className={styles.pageSectionInfo}>
+        <strong className={styles.pageSectionCount}>{count}</strong>
+        <h3 className={styles.pageSectionTitle}>{title}</h3>
       </div>
 
-      <div className='page-section__content'>
+      <div className={styles.pageSectionContent}>
         {children}
       </div>
     </div>

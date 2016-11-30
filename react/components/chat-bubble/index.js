@@ -7,10 +7,10 @@ import styles from './chat-bubble.css'
 const ChatBubble = (props) => {
   const { text, external } = props
   const classes = cn({
-    'chat-bubble': true,
-    'chat-bubble--color': !external,
-    'chat-bubble--no-color': external,
-    'chat-bubble--reverse': external,
+    [styles.chatBubble]: true,
+    [styles.chatBubbleColor]: !external,
+    [styles.chatBubbleNoColor]: external,
+    [styles.chatBubbleReverse]: external,
   })
   return (
     <Motion defaultStyle={{x: 25, o: 0}} style={{x: spring(0, presets.wobbly), o: spring(1)}}>
@@ -22,11 +22,11 @@ const ChatBubble = (props) => {
             transform: `translateY(${x}px)`,
             opacity: o,
           }}>
-          <div className='chat-bubble__circles'>
-            <div className='chat-bubble__circle chat-bubble__circle--small' />
-            <div className='chat-bubble__circle' />
+          <div className={styles.chatBubbleCircles}>
+            <div className={cn(styles.chatBubbleCircle, styles.chatBubbleCircleSmall)} />
+            <div className={styles.chatBubbleCircle} />
           </div>
-          <div className='chat-bubble__text'>
+          <div className={styles.chatBubbleText}>
             {text}
           </div>
         </div>
