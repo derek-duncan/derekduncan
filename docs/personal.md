@@ -4,13 +4,13 @@ Here are a few quick links if you're looking for something specific.
 
 [Resume](/resume) | [Email](/email)
 
-I find meeting people one of the most exciting and wonderful parts of life. It's a pleasure to see you here, and I would love become acquainted! Connect with me on [Twitter](https://twitter.com/DerekDuncan96) when you get a chance.
+I find meeting people one of the most exciting and wonderful parts of life. Thanks for taking some time to look at my information. I would love to become acquainted, so connect with me on [Twitter](https://twitter.com/DerekDuncan96) when you get a chance.
 
 Now, a little about me.
 
-I am presently engaged to marry my fiancé, Ginny, in December of 2016, and start our new journey through life together. I am so excited!
+I am presently engaged to marry my fiancé, Ginny, in December of 2016, and start our new journey through life together. We are so excited!
 
-I am a serial hobbier (I don't believe this is an official term, though :).
+I am a serial hobbier (I don't believe this is an official term, though :)).
 
 I play ukulele and guitar when I am lost in thought.
 
