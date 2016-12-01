@@ -4,9 +4,13 @@
   margin-top: var(--space-small);
 }
 
+.chat-input-inner {
+  position: relative;
+}
+
 .chat-input {
   width: 100%;
-  padding: var(--space-small) var(--space-medium);
+  padding: var(--space-small) 6rem var(--space-small) var(--space-medium);
   box-shadow: 0 0.2rem 0.5rem var(--color-light-gry);
   border: 1px solid #fff;
   color: var(--color-dark-gry);
@@ -22,5 +26,33 @@
     border-color: var(--color-light-gry);
     box-shadow: 0 0.2rem 0.5rem var(--color-medium-gry);
     color: var(--color-dark);
+  }
+}
+
+.chat-input-button {
+  position: absolute;
+  top: 50%;
+  right: var(--space-small);
+  transform: translateY(-50%);
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  box-shadow: 0 0.2rem 0.5rem var(--color-light-gry);
+  text-align: center;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 250ms;
+
+  &:hover {
+    background-color: var(--color-primary-dark);
+  }
+
+  img {
+    width: 0.8rem;
+    height: auto;
   }
 }

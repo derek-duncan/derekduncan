@@ -1,5 +1,6 @@
 import React from 'react';
 import { isArrayLike } from 'ramda';
+import trackEvent from 'trackEvent';
 import validateMessage from 'validateMessage';
 import getResponseToMessage from 'getResponseToMessage';
 import responses from 'data/responses';
@@ -18,9 +19,9 @@ class Chat extends React.Component {
       showLoader: false,
     };
     this.responseDelay = 1250;
-    this.saveMessage = this.saveMessage.bind(this);
+    this.storeMessage = this.storeMessage.bind(this);
     this.sendMessage = this.sendMessage.bind(this);
-    this.scrollToBottom = this.scrollToBottom.bind(this);
+    this.scrollToChatBottom = this.scrollToChatBottom.bind(this);
     this.respondToMessage = this.respondToMessage.bind(this);
   }
 
@@ -30,13 +31,13 @@ class Chat extends React.Component {
     this.sendMessage([welcomeMessage, directionMessage], false);
   }
 
-  scrollToBottom() {
+  scrollToChatBottom() {
     this.chatContainer.scrollTop = Math.floor(
       this.chatContainer.scrollHeight - this.chatContainer.clientHeight,
     );
   }
 
-  saveMessage(message) {
+  storeMessage(message) {
     const timestamp = Math.floor(new Date() / 1000);
     this.setState({
       messages: [...this.state.messages, { ...message, timestamp }],
@@ -54,22 +55,26 @@ class Chat extends React.Component {
     }, this.responseDelay);
   }
 
-  sendMessage(message, getResponse = true) {
+  sendMessage(message, expectResponse = true) {
     if (isArrayLike(message)) {
       message.forEach((m, i) => {
         return setTimeout(() => {
-          this.sendMessage(m, getResponse);
+          this.sendMessage(m, expectResponse);
         }, this.responseDelay * i);
       });
       return;
     }
     if (!validateMessage(message)) return;
 
-    this.saveMessage(message);
-    this.scrollToBottom();
+    this.storeMessage(message);
+    this.scrollToChatBottom();
 
-    if (getResponse) {
+    if (expectResponse) {
       this.respondToMessage(message);
+    }
+
+    if (!message.external) {
+      trackEvent('chat', 'message', 'New Messages', message.text);
     }
   }
 
