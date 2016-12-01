@@ -12,6 +12,7 @@
   color: var(--color-dark-gry);
   font-size: 1.6rem;
   font-weight: 200;
+  appearance: none;
   outline: none;
   letter-spacing: var(--ls-loose);
   transition: all 250ms;
