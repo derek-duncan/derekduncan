@@ -31,7 +31,7 @@ const Root = () => {
           <div dangerouslySetInnerHTML={{ __html: myWorkDoc }} />
         </PageSection>
 
-        <PageSection count='04' title='Chat with me'>
+        <PageSection count='04' title='Chat with me (beta)'>
           <Chat />
         </PageSection>
       </div>

@@ -15531,7 +15531,7 @@ var Root = function Root() {
       ),
       _react2.default.createElement(
         _pageSection2.default,
-        { count: '04', title: 'Chat with me' },
+        { count: '04', title: 'Chat with me (beta)' },
         _react2.default.createElement(_chat2.default, null)
       )
     )
