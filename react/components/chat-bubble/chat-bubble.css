@@ -17,7 +17,11 @@
 
   .chat-bubble__circle {
     margin-right: 0;
-    margin-left: var(--space-small);
+    margin-left: var(--space-xsmall);
+
+    @media (--medium) {
+      margin-left: var(--space-small);
+    }
   }
 }
 
@@ -57,12 +61,13 @@
   display: block;
   width: 15px;
   height: 15px;
-  margin-right: var(--space-small);
+  margin-right: var(--space-xsmall);
   border-radius: 50%;
 
   @media (--medium) {
     width: 25px;
     height: 25px;
+    margin-right: var(--space-small);
   }
 }
 
