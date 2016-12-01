@@ -15510,17 +15510,12 @@ var Root = function Root() {
       { className: (0, _classnames2.default)(_root2.default.pageSections, _root2.default.pageWidth) },
       _react2.default.createElement(
         _pageSection2.default,
-        { count: '01', title: 'Chat with me' },
-        _react2.default.createElement(_chat2.default, null)
-      ),
-      _react2.default.createElement(
-        _pageSection2.default,
-        { count: '02', title: 'Myself' },
+        { count: '01', title: 'Myself' },
         _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _personal2.default } })
       ),
       _react2.default.createElement(
         _pageSection2.default,
-        { count: '03', title: 'My Thoughts' },
+        { count: '02', title: 'My Thoughts' },
         _homepageArticles2.default.map(function (article, i) {
           return _react2.default.createElement(
             'div',
@@ -15531,8 +15526,13 @@ var Root = function Root() {
       ),
       _react2.default.createElement(
         _pageSection2.default,
-        { count: '04', title: 'My Work' },
+        { count: '03', title: 'My Work' },
         _react2.default.createElement('div', { dangerouslySetInnerHTML: { __html: _myWork2.default } })
+      ),
+      _react2.default.createElement(
+        _pageSection2.default,
+        { count: '04', title: 'Chat with me' },
+        _react2.default.createElement(_chat2.default, null)
       )
     )
   );
