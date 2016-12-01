@@ -1,7 +1,3 @@
-'use strict';
-
-const webpack = require('webpack');
-
 module.exports = {
   context: __dirname + '/react',
   module: {
@@ -10,14 +6,20 @@ module.exports = {
         test: /\.js$/,
         use: [{
           loader: 'babel-loader',
-          options: { presets: ['es2015', 'react'] }
+          options: {
+            presets: [
+              'es2015',
+              'react',
+              'stage-3',
+            ],
+          },
         }],
       },
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader?importLoaders=1',
+          'css-loader?modules&camelCase&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
           'postcss-loader',
         ],
       },

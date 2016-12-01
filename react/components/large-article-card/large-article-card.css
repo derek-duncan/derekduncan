@@ -1,6 +1,7 @@
 @import '../../variables.css';
 
 .lrg-article-card {
+  composes: clearfix from '../../index.css';
   position: relative;
 }
 

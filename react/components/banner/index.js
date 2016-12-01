@@ -5,20 +5,20 @@ import styles from './banner.css'
 
 const Banner = () => {
   return (
-    <div className='banner'>
-      <img className='banner__mark' src='/images/mark.svg' />
-      <h1 className='banner__name'>Derek Duncan<span>.</span></h1>
-      <p className='banner__text'>A Website Developer and Designer in Tulsa, Oklahoma.</p>
-      <img className='banner__background' src='/images/profile-image.png' />
-      <div className='banner__icons'>
+    <div className={styles.banner}>
+      <img className={styles.bannerMark} src='/images/mark.svg' />
+      <h1 className={styles.bannerName}>Derek Duncan<span>.</span></h1>
+      <p className={styles.bannerText}>A Website Developer and Designer in Tulsa, Oklahoma.</p>
+      <img className={styles.bannerBackground} src='/images/profile-image.png' />
+      <div className={styles.bannerIcons}>
         <a href='/github' title='Github' target='_blank'>
-          <Icon className='banner__icon' type='github' />
+          <Icon className={styles.bannerIcon} type='github' />
         </a>
         <a href='/insta' title='Instagram' target='_blank'>
-          <Icon className='banner__icon' type='insta' />
+          <Icon className={styles.bannerIcon} type='insta' />
         </a>
         <a href='/twitter' title='Twitter' target='_blank'>
-          <Icon className='banner__icon' type='twitter' />
+          <Icon className={styles.bannerIcon} type='twitter' />
         </a>
       </div>
     </div>

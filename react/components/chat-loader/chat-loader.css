@@ -1,0 +1,22 @@
+@import '../../index.css';
+
+.chat-loader {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: var(--space-small);
+}
+
+.chat-loader__text {
+  height: 20px;
+  line-height: 10px;
+  padding: 0 var(--space-small);
+  border-radius: 15px;
+  background-color: var(--color-light-gry);
+  color: var(--color-dark-gry);
+  box-shadow: 0 2px 0 var(--color-medium-gry);
+  font-size: 2.2rem;
+  letter-spacing: var(--ls-loose);
+  vertical-align: middle;
+}
