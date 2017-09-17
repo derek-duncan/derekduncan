@@ -4,16 +4,15 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              'es2015',
-              'react',
-              'stage-3',
-            ],
+        exclude: '/node_modules/',
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['es2015', 'react', 'stage-3'],
+            },
           },
-        }],
+        ],
       },
       {
         test: /\.css$/,
@@ -25,10 +24,7 @@ module.exports = {
       },
       {
         test: /\.md$/,
-        use: [
-          'html-loader',
-          'markdown-loader',
-        ],
+        use: ['html-loader', 'markdown-loader'],
       },
     ],
   },
