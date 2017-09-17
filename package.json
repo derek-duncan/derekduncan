@@ -48,7 +48,11 @@
     "webpack-dev-server": "2.1.0-beta.10"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "setup": "yarn && yarn compile:prod",
+    "compile": "$(npm bin)/webpack",
+    "compile:prod": "$(npm bin)/webpack -p"
   },
   "author": "Derek Duncan <work@derekduncan.me>",
   "license": "ISC"
